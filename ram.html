@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-image: url(./ram_res_bgimages.jpeg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+
+    nav {
+      background-color: rgba(255, 255, 255, 0.8);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+    }
+
+    .nav-left {
+      display: flex;
+      align-items: center;
+    }
+
+    nav img {
+      margin-right: 15px;
+      height: 40px;
+      width: 40px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: black;
+      text-decoration: none;
+      padding: 10px 15px;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: red;
+      color: white;
+    }
+
+    h1 {
+      color: white;
+      font-size: 3.5vw;
+      font-weight: bold;
+      letter-spacing: 2px;
+      padding: 10px 20px;
+      text-transform: uppercase;
+      margin-top: 10px;
+      margin-bottom: 5px;
+      text-align: left;
+    }
+
+    h5 {
+      padding: 20px;
+      font-size: 1.5vw;
+      color: white;
+      font-family: 'CustomScriptFont', cursive;
+      text-align: left;
+      margin-top: 0;
+    }
+
+    @font-face {
+      font-family: 'CustomScriptFont';
+      src: url('fonts/customscriptfont.woff2') format('woff2'),
+           url('fonts/customscriptfont.woff') format('woff'),
+           url('fonts/customscriptfont.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    .text-container {
+      text-align: left;
+      padding: 20px;
+      border: 1px solid #fff;
+      border-radius: 5px;
+      max-width: 800px;
+      width: 90%;
+      margin: 20px auto;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    p {
+      color: white;
+      font-size: 1.2em;
+    }
+
+    .button {
+      background-color: #CD6600;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: block;
+      margin: 20px auto;
+      font-size: 1em;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+      transition: transform 0.3s;
+    }
+
+    .button:hover {
+      transform: scale(1.05);
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      nav a {
+        width: 100%;
+        text-align: left;
+        padding: 12px;
+      }
+
+      h1 {
+        font-size: 6vw;
+        text-align: center;
+      }
+
+      h5 {
+        font-size: 4vw;
+        text-align: center;
+      }
+
+      .text-container {
+        width: 95%;
+        font-size: 1em;
+      }
+
+      .button {
+        width: 80%;
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-left">
+      <img src="https://cdn-icons-png.flaticon.com/512/1532/1532678.png" alt="icon">
+    </div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </div>
+  </nav>
+
+  <h5>Fresh and delicious</h5>
+  <h1>RESTAURANT</h1>
+  <div class="text-container">
+    <p>Welcome to Ramu Delicious Restaurant. The food here is fresh and delicious, and the price is favorable. You are welcome to taste it.</p>
+  </div>
+  <button class="button">Learn More</button>
+
+</body>
+</html>
